@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>S-400 TIMEKEEPER</title>
+  <style>
+    html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#020806;color:#dfffea;font-family:system-ui,sans-serif}
+    iframe{display:block;width:100%;height:100%;border:0;background:#020806}
+    .offline{position:fixed;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);width:min(520px,calc(100% - 32px));padding:22px;border:1px solid #397b58;background:#07150f;text-align:center}
+    .offline strong,.offline span{display:block}.offline span{margin-top:9px;color:#8fb6a1;font-size:13px}.loaded{display:none}
+  </style>
+</head>
+<body>
+  <div id="status" class="offline"><strong>S-400 TIMEKEEPER 불러오는 중…</strong><span>인터넷 연결이 필요합니다.</span></div>
+  <iframe title="S-400 TIMEKEEPER" src="https://s400-seeker-sim.danmujifriend0201.chatgpt.site" allow="fullscreen; autoplay" onload="document.getElementById('status').classList.add('loaded')"></iframe>
+</body>
+</html>
